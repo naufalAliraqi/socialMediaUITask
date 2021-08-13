@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/snowbackgraond"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/mainview"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView25"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_friends"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView"></com.google.android.material.imageview.ShapeableImageView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/me"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circle"></com.google.android.material.imageview.ShapeableImageView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="Naufal Aliraqi"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+            app:layout_constraintTop_toTopOf="@+id/shapeableImageView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Iraq, Baghdad"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_round_local_phone_24"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:shapeAppearanceOverlay="@style/circlesmile" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_messenger"
+            app:layout_constraintStart_toEndOf="@+id/shapeableImageView2"
+            app:layout_constraintTop_toTopOf="@+id/shapeableImageView2"
+            app:shapeAppearanceOverlay="@style/circlesmile" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            app:layout_constraintStart_toEndOf="@+id/shapeableImageView4"
+            app:layout_constraintTop_toTopOf="@+id/shapeableImageView4"
+            app:shapeAppearanceOverlay="@style/circlesmile" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Call"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView2"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView2"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView4"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView4"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView3"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="#BBBBBB"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="#f8f8f8"
+            android:elevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_outline_timeline_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_baseline_person_outline_24"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView5"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView5" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView7"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_outline_supervisor_account_24"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView6"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView6" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView8"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_outline_photo_24"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView7"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView7" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_outline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView8" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timeline"
+                android:textColor="#969696"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/shapeableImageView5"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView5"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView5" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="#969696"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/shapeableImageView6"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView6"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:textColor="#969696"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/shapeableImageView7"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView7"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView7" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photos"
+                android:textColor="#969696"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/shapeableImageView8"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView8"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ammar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:shapeAppearanceOverlay="@style/mainaccount"></com.google.android.material.imageview.ShapeableImageView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittext"
+            android:hint="Write something to Naufal..."
+            android:paddingStart="12dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/shapeableImageView10"
+            app:layout_constraintTop_toTopOf="@+id/shapeableImageView10" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView11"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintStart_toEndOf="@+id/textInputEditText"
+            app:layout_constraintTop_toTopOf="@+id/textInputEditText"
+            app:shapeAppearanceOverlay="@style/minicircle" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="370dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/minicircle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Photos"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="780"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/textView10" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView19"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skayphoto_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView12"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trees"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView13"
+                android:layout_width="140dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/graduation"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView12"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView12"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView14"
+                android:layout_width="82dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/me2"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView12"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView13"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView15"
+                android:layout_width="96dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alam"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView12"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView12"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView16"
+                android:layout_width="126dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nesr"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView15"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView12"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="See More"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView13" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView17"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView13" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="370dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/minicircle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="50dp"
+                android:elevation="1dp"
+                android:background="@drawable/onlinecircle"
+                app:layout_constraintEnd_toEndOf="@+id/shapeableImageView22"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView22">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="50dp"
+                android:elevation="1dp"
+                android:background="@drawable/onlinecircle"
+                app:layout_constraintEnd_toEndOf="@+id/shapeableImageView20"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView20">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Friends"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="530"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintStart_toEndOf="@+id/textView13" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView20"
+                android:layout_width="77dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ahmed"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView21"
+                android:layout_width="77dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shahlaa"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView20"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView20"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView22"
+                android:layout_width="77dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="13dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zahraa"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView21"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView21"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView23"
+                android:layout_width="77dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tamara"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView22"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView22"
+                app:shapeAppearanceOverlay="@style/minicircle"></com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmed"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView20"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView20" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19 mutual friends"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shahlaa"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView21"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView21" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 mutual friends"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zahraa"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView22"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView22" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tamara"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/shapeableImageView23"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView23" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_friends"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></com.google.android.material.imageview.ShapeableImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

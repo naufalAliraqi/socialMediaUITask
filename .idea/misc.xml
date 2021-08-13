@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable-hdpi/minicircle.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable-hdpi/onlinecircle.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable-hdpi/skayphoto_24.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/circle.xml" value="0.2703125" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/edittext.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/ic_outline_photo_24.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/ic_outline_supervisor_account_24.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/ic_outline_timeline_24.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/ic_round_local_phone_24.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/imagesred.xml" value="0.202734375" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/drawable/mainview.xml" value="0.2703125" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
+        <entry key="..\:/Kotlin_Corse/socialMediaUITask/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
